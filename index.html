@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="styleforhomepage.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    <style>
+
+      .form-row{
+        margin-top: 25px;
+      }
+      .menu-item {
+        font-family: 'Work Sans', sans-serif;
+        text-align: center;
+        font-size: 75px;
+      }
+      .w3-container {
+        background-image: url("background1.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 700px;
+      }
+      .progress-bar {
+        position: relative;
+        width: 900px;
+        height: 40px;
+        border: 1px solid #000;
+      }
+
+      .progress-bar-fill {
+        height: 100%;
+        background: red;
+        transition: width 0.5s;  
+      }
+      .progress-bar-value{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+       }
+      .charimage{
+        width: 400px;
+        padding-left: 350px;
+      }
+    </style>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylefordropdown.css">
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:300px;" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+  <form>
+  <label for="fname">food:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+
+<div class="w3-main" style="margin-left:300px">
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+  <div class="menu">
+    <div class="menu-item"><a href="athenahacks.html">HOME</a></div>
+    <div class="clear"></div>
+    
+  </div>
+</div>
+
+<div class="w3-container">
+  <div class="pet">
+  <p style="text-align: center">Health Bar </p>
+  <p>The sidebar in this example will always be displayed on screens wider than 992px, and hidden on tablets or mobile phones (screens less than 993px wide).</p>
+  <p>On tablets and mobile phones the sidebar is replaced with a menu icon to open the sidebar.</p>
+  <p>The sidebar will overlay of the page content.</p>
+  <p><b>Resize the browser window to see how it works.</b></p>
+  </div>
+</div>
+   
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+     
+</body>
+</html>
+
+</html>
