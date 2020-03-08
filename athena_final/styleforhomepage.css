@@ -1,0 +1,38 @@
+		body, html {
+			margin: 0px;
+			padding: 0px;
+		}
+		#outercontainer {
+		}
+		#menu {
+			background-color: #94D6A6;
+			/*border-bottom: 2px solid black;*/
+			font-size: 50px;
+			height: 150px;
+			position: fixed;
+			width: 100%;
+			z-index: 1;
+		}
+		#menu img {
+			height: 150px;
+			float: left;
+		}
+		.menu-item{
+            float: left;
+            width: 100%;
+            background-color: #94D6A6;
+            text-align: center;
+            height: 75px;
+            line-height: 45px;
+            padding-top: 15px;
+        }
+        .clear {
+            clear: both;
+        }
+        .menu-item a {
+            color: #2d9164;
+            text-decoration: none; 
+        }
+        .menu-item a:hover {
+            font-weight: bold;
+        } 
